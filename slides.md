@@ -1,12 +1,11 @@
 ---
 theme: seriph
-background: https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80
-title: gem - AI Music & Visualization
+background: https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2560&q=80
+title: Audio to Visualizer - Hack for Humanity 2026
 info: |
   ## gem: An Orchestra for the Deaf
-  Astro + TypeScript + Convex + SCSS + ElevenLabs + Vercel AI SDK
-
-  A mood-driven creative suite for AI music composition and real-time audio-to-color visualization.
+  Built for **Hack for Humanity 2026**
+  A sustainable, accessibility-first suite for AI music and visualization.
 class: text-center
 transition: slide-left
 mdc: true
@@ -14,6 +13,7 @@ mdc: true
 
 # gem
 
+**Hack for Humanity 2026**
 AI-Powered Music Composition & Real-time Audio Visualization
 
 <div class="pt-12">
@@ -35,23 +35,23 @@ AI-Powered Music Composition & Real-time Audio Visualization
 layout: default
 ---
 
-# Project Mission
+# Humanity & Sustainability Mission
 ## "An Orchestra for the Deaf"
 
-**gem** bridges the gap between auditory and visual experiences, translating complex soundscapes into intuitive, perceptually uniform color data.
+**gem** is designed as a sustainable piece of digital infrastructure, bridging the gap between auditory and visual experiences through efficient, low-impact technology.
 
 <v-clicks>
 
-- 🎵 **Mood-Driven Creation**: Compose original music by defining emotional parameters.
-- 🌈 **Living Color**: Visualize any audio source through a deep feature extraction engine.
-- ♿ **Accessibility First**: Making the nuances of music visible and "felt" through color.
-- 🛠️ **Modern Stack**: Built with Astro 5, Convex, and ElevenLabs for real-time performance.
+- 🌍 **Sustainable AI**: Using lean, high-efficiency models to minimize carbon footprint.
+- ♿ **Inclusion as Standard**: Designed specifically for the deaf and hard-of-hearing communities.
+- ♻️ **Evergreen Design**: Modular architecture (Astro + Convex) ensuring long-term maintainability.
+- 🎵 **Emotional Equity**: Providing every human, regardless of hearing ability, the right to "feel" music.
 
 </v-clicks>
 
 ---
 layout: image-right
-image: https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80
+image: https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80
 ---
 
 # Interactive Music Composer
@@ -59,23 +59,23 @@ image: https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0
 A section-based workflow for guiding AI to generate structured musical tracks.
 
 - **Granular Control**: Define parameters for Intro, Verse, Chorus, Bridge, and Outro.
-- **Emotional Mapping**: Select moods and energy patterns instead of simple text prompts.
-- **Lyric Engine**: Auto-generate or write lyrics synchronized with each section.
-- **Streaming Audio**: Powered by **ElevenLabs Music API** with real-time cloud persistence.
+- **Human-Centric Design**: Focus on emotion and intent rather than just technical prompts.
+- **Sustainable Hosting**: Powered by **Vercel Edge** for low-latency, energy-efficient delivery.
+- **Streaming Audio**: Real-time cloud persistence via **Convex** for zero-waste data management.
 
 ---
 layout: image-left
-image: https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80
+image: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80
 ---
 
 # Audio to Color Visualizer
 
 A sophisticated client-side engine that translates sound into emotional visual feedback in real time.
 
-- **Multi-Source Input**: File uploads, microphone, or browser speaker output.
-- **Deep Feature Extraction**: Analyzes **25 distinct audio features** per frame.
-- **OKLCH Color Space**: Maps audio "feel" to perceptually uniform colors.
-- **Real-time Processing**: Zero-latency analysis using the Web Audio API.
+- **Zero-Waste Processing**: 100% client-side analysis; no server-side audio processing required.
+- **OKLCH Color Space**: Perceptually uniform colors that respect human vision.
+- **Real-time Accessibility**: Zero-latency feedback, critical for live interactions.
+- **Multi-Source Input**: Adaptable to any environment—from home to concert halls.
 
 ---
 
@@ -107,15 +107,15 @@ const features = {
 layout: two-cols
 ---
 
-# Engineering Standards
-## Semantic SCSS
+# Engineering for Good
+## Sustainable Semantic SCSS
 
-Strict architectural patterns using **OpenProps** design tokens.
+Strict architectural patterns using **OpenProps** for minimal CSS weight.
 
-- **Anti-Tailwind**: Zero utility classes; all styles are semantic and scoped.
-- **Design Tokens**: Standardized variables for sizes, shadows, and colors.
-- **Data Attributes**: Managing state and variants cleanly.
-- **Clean SSR**: Styled with Astro's zero-JS CSS approach.
+- **Eco-friendly Code**: Minimalist styles reduce bandwidth and battery consumption.
+- **Anti-Tailwind**: Clean, semantic markup for better screen reader compatibility.
+- **Design Tokens**: Standardized green-palette variables for visual consistency.
+- **Zero-JS CSS**: Utilizing Astro's SSR capabilities for maximum efficiency.
 
 ::right::
 
@@ -126,10 +126,10 @@ Strict architectural patterns using **OpenProps** design tokens.
 .composer-card {
   @include card-base;
   padding: var(--size-4);
-  background: var(--surface-2);
+  background: var(--surface-2); // Earthy tone
 
   &[data-active='true'] {
-    border-color: var(--blue-5);
+    border-color: var(--green-5); // Sustainably green
     box-shadow: var(--shadow-4);
   }
 }
@@ -216,26 +216,50 @@ npm run check    # Type & Astro validation
 ```
 
 ---
+
+# Visualizing Sound for Accessibility
+## Making Music Informative & Intuitive
+
+To ensure the experience is both **interactive** and **informative** for the deaf, we employ several mapping methodologies:
+
+<v-clicks>
+
+- 🧠 **Perceptual Uniformity (OKLCH)**: Unlike RGB, OKLCH ensures that changes in brightness and intensity are felt consistently across the color spectrum.
+- 🌊 **Kinetic Feedback**: Sound energy is mapped to **physical scale and vibration** (CSS transforms), allowing users to "see" the beat and pressure.
+- 🎨 **Emotional Hue Mapping**: High frequencies (treble) map to cooler, sharper hues, while low frequencies (bass) map to warmer, broader hues.
+- 📊 **Informative Telemetry**: Real-time energy and frequency data provide a "data-first" layer for those who want to understand the technical structure of the sound.
+
+</v-clicks>
+
+---
+layout: center
+---
+
+# Live Prototype: Audio-to-Color
+
+<SoundVisualizer />
+
+---
 layout: center
 class: text-center
 ---
 
-# Conclusion
+# Humanity & Sustainability Impact
 
 **gem** redefines the boundary between sound and vision, providing a powerful platform for AI-assisted creativity and accessibility.
 
 <div class="mt-12 flex justify-center gap-8">
   <div class="flex flex-col items-center">
-    <carbon:logo-github class="text-4xl mb-2"/>
-    <span class="text-xs">Open Source</span>
+    <carbon:earth class="text-4xl mb-2 text-green-500"/>
+    <span class="text-xs">Sustainable Tech</span>
   </div>
   <div class="flex flex-col items-center">
-    <carbon:accessibility class="text-4xl mb-2"/>
+    <carbon:accessibility class="text-4xl mb-2 text-blue-500"/>
     <span class="text-xs">Inclusive Design</span>
   </div>
   <div class="flex flex-col items-center">
-    <carbon:flash class="text-4xl mb-2"/>
-    <span class="text-xs">Real-time Performance</span>
+    <carbon:flash class="text-4xl mb-2 text-yellow-500"/>
+    <span class="text-xs">Human-Centric AI</span>
   </div>
 </div>
 
