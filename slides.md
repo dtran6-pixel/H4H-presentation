@@ -1,20 +1,20 @@
 ---
 theme: seriph
 background: https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80
-title: Audio to Color Visualizer
+title: gem - AI Music & Visualization
 info: |
-  ## Audio Visualizer AI
+  ## gem: An Orchestra for the Deaf
   Astro + TypeScript + Convex + SCSS + ElevenLabs + Vercel AI SDK
 
-  A modern full-stack architecture featuring a real-time Audio-to-Color visualizer.
+  A mood-driven creative suite for AI music composition and real-time audio-to-color visualization.
 class: text-center
 transition: slide-left
 mdc: true
 ---
 
-# Audio to Color Visualizer
+# gem
 
-Modern Full-Stack Architecture & Real-time Audio Visualization
+AI-Powered Music Composition & Real-time Audio Visualization
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white op-10">
@@ -26,7 +26,7 @@ Modern Full-Stack Architecture & Real-time Audio Visualization
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 hover:opacity-100">
     <carbon:edit />
   </button>
-  <a href="https://github.com/adarshrkumar/The-ATSDC-Stack" target="_blank" alt="GitHub" title="GitHub" class="text-xl slidev-icon-btn opacity-50 hover:opacity-100">
+  <a href="https://github.com/adarshrkumar/H4H-26-Project-Code" target="_blank" alt="GitHub" title="GitHub" class="text-xl slidev-icon-btn opacity-50 hover:opacity-100">
     <carbon:logo-github />
   </a>
 </div>
@@ -35,44 +35,56 @@ Modern Full-Stack Architecture & Real-time Audio Visualization
 layout: default
 ---
 
-# Modern AI Audio Stack
+# Project Mission
+## "An Orchestra for the Deaf"
 
-A high-performance framework combination optimized for speed, developer experience, and real-time capabilities.
+**gem** bridges the gap between auditory and visual experiences, translating complex soundscapes into intuitive, perceptually uniform color data.
 
 <v-clicks>
 
-- 🚀 **Astro 5**: Island architecture with server-side rendering (`output: 'server'`)
-- 📘 **TypeScript**: End-to-step type safety across frontend and backend
-- ☁️ **Convex**: Real-time database and cloud functions for seamless sync
-- 🎨 **Modern SCSS**: Design tokens via **OpenProps** and strict architectural patterns
-- 🤖 **Vercel AI SDK**: Seamless integration with OpenAI and other LLM providers
-- 🎙️ **ElevenLabs**: High-fidelity AI voice synthesis for emotional audio feedback
+- 🎵 **Mood-Driven Creation**: Compose original music by defining emotional parameters.
+- 🌈 **Living Color**: Visualize any audio source through a deep feature extraction engine.
+- ♿ **Accessibility First**: Making the nuances of music visible and "felt" through color.
+- 🛠️ **Modern Stack**: Built with Astro 5, Convex, and ElevenLabs for real-time performance.
 
 </v-clicks>
 
 ---
 layout: image-right
+image: https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80
+---
+
+# Interactive Music Composer
+
+A section-based workflow for guiding AI to generate structured musical tracks.
+
+- **Granular Control**: Define parameters for Intro, Verse, Chorus, Bridge, and Outro.
+- **Emotional Mapping**: Select moods and energy patterns instead of simple text prompts.
+- **Lyric Engine**: Auto-generate or write lyrics synchronized with each section.
+- **Streaming Audio**: Powered by **ElevenLabs Music API** with real-time cloud persistence.
+
+---
+layout: image-left
 image: https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80
 ---
 
-# Flagship Feature
-## Audio to Color Visualizer
+# Audio to Color Visualizer
 
 A sophisticated client-side engine that translates sound into emotional visual feedback in real time.
 
-- **3 Input Modes**: File upload, Speaker/Tab capture, and Microphone
-- **Real-time Processing**: Powered by the Web Audio API
-- **Emotional Mapping**: Classifies audio into 30+ distinct moods
-- **OKLCH Colors**: Generates perceptually uniform HSL colors
+- **Multi-Source Input**: File uploads, microphone, or browser speaker output.
+- **Deep Feature Extraction**: Analyzes **25 distinct audio features** per frame.
+- **OKLCH Color Space**: Maps audio "feel" to perceptually uniform colors.
+- **Real-time Processing**: Zero-latency analysis using the Web Audio API.
 
 ---
 
 # Real-time Audio Analysis
 
-The visualization engine (`IndexScript.astro`) extracts complex features using FFT and time-domain analysis.
+The visualization engine extracts complex features using FFT and time-domain analysis.
 
 ```ts {all|2-5|7-11|13-17|all}
-// Key features extracted in every frame:
+// 25+ features extracted in every frame:
 const features = {
     energy:     (sum / N) / 255,           // Perceived volume
     brightness: logCentroid / Math.log2(N), // Spectral centroid
@@ -92,64 +104,33 @@ const features = {
 ```
 
 ---
-layout: center
-class: text-center
----
-
-# Mood Classification Logic
-
-The system maps audio features to emotional states using a multi-dimensional heuristic.
-
-<div class="grid grid-cols-3 gap-4 mt-8">
-  <div v-click class="p-4 border border-gray-700 rounded bg-gray-900/50">
-    <h3 class="text-blue-400">Calm</h3>
-    <p class="text-sm">Low Energy + Low Brightness</p>
-    <div class="text-xs opacity-50 italic">Peaceful, Serene, Meditative</div>
-  </div>
-  <div v-click class="p-4 border border-gray-700 rounded bg-gray-900/50">
-    <h3 class="text-yellow-400">High Energy</h3>
-    <p class="text-sm">High Energy + High Brightness</p>
-    <div class="text-xs opacity-50 italic">Excited, Euphoric, Uplifting</div>
-  </div>
-  <div v-click class="p-4 border border-gray-700 rounded bg-gray-900/50">
-    <h3 class="text-red-400">Intense</h3>
-    <p class="text-sm">High Roughness + High Energy</p>
-    <div class="text-xs opacity-50 italic">Angry, Furious, Powerful</div>
-  </div>
-</div>
-
----
 layout: two-cols
 ---
 
 # Engineering Standards
-## SCSS Architecture
+## Semantic SCSS
 
-We follow a strict, semantic styling methodology powered by **OpenProps**.
+Strict architectural patterns using **OpenProps** design tokens.
 
-- **No Inline Styles**: All styles in external `.scss` files
-- **Semantic Classes**: No utility-first classes (anti-Tailwind)
-- **Data Attributes**: Used for variants and states
-  - `data-variant="primary"`
-  - `data-state="loading"`
-- **Design Tokens**: Standardized via OpenProps (`--size-*`, `--shadow-*`)
+- **Anti-Tailwind**: Zero utility classes; all styles are semantic and scoped.
+- **Design Tokens**: Standardized variables for sizes, shadows, and colors.
+- **Data Attributes**: Managing state and variants cleanly.
+- **Clean SSR**: Styled with Astro's zero-JS CSS approach.
 
 ::right::
 
 <div class="pl-8 pt-10">
 
 ```scss
-// src/styles/components/button.scss
-.btn {
-  @include button-base;
+// Example Component Style
+.composer-card {
+  @include card-base;
+  padding: var(--size-4);
+  background: var(--surface-2);
 
-  &[data-variant='primary'] {
-    @include button-primary;
-  }
-
-  &[data-state='loading'] {
-    pointer-events: none;
-    &::after { ... }
+  &[data-active='true'] {
+    border-color: var(--blue-5);
+    box-shadow: var(--shadow-4);
   }
 }
 ```
@@ -158,64 +139,57 @@ We follow a strict, semantic styling methodology powered by **OpenProps**.
 
 ---
 
-# Real-time Backend with Convex
+# Backend & Cloud Infrastructure
 
-Convex handles our persistence layer with automatic reactivity and simplified cloud functions.
+A reactive, serverless backend optimized for real-time audio data and file handling.
+
+- 🌊 **Convex**: Real-time database for track metadata and user sessions.
+- 📁 **UploadThing**: Reliable hosting for generated MP3 files.
+- ⚡ **Vercel Edge**: Low-latency execution for AI orchestration.
+- 🔒 **Type Safety**: Automatic TypeScript definitions for the entire schema.
 
 ```ts
-// convex/tracks.ts
-export const createTrack = mutation({
-    args: {
-        title: v.string(),
-        storageId: v.id('_storage'),
-        mimeType: v.string(),
-    },
-    handler: async (ctx, args) => {
-        const id = await ctx.db.insert('tracks', {
-            ...args,
-            uploadedAt: Date.now(),
-        });
-        return await ctx.db.get(id);
-    },
+// Real-time track persistence
+export const saveSection = mutation({
+  args: { trackId: v.id("tracks"), section: v.string(), mood: v.string() },
+  handler: async (ctx, args) => {
+    return await ctx.db.patch(args.trackId, { [args.section]: args.mood });
+  }
 });
 ```
 
-- **Type Safety**: End-to-end types generated from schema
-- **Zero Config**: No managing migrations or connection pools
-- **File Storage**: Built-in support for audio file uploads
-
 ---
 
-# AI Integration & Search
+# AI Integration Stack
 
-The stack leverages **Vercel AI SDK**, **ElevenLabs**, and **Exa Search** for intelligent features.
+The platform leverages specialized AI providers for music, text, and search.
 
 <div grid="~ cols-3 gap-8" m="t-10">
 
 <div>
-<h3>Vercel AI SDK</h3>
+<h3>ElevenLabs</h3>
 <ul>
-  <li>Standardized API for LLMs</li>
-  <li>Streaming responses</li>
-  <li>Unified provider interface</li>
+  <li><strong>Music API</strong> for track generation</li>
+  <li>Voice synthesis for UI feedback</li>
+  <li>High-fidelity audio output</li>
 </ul>
 </div>
 
 <div>
-<h3>ElevenLabs</h3>
+<h3>Vercel AI SDK</h3>
 <ul>
-  <li>AI Voice synthesis</li>
-  <li>Real-time mood narration</li>
-  <li>Secure API Key usage</li>
+  <li><strong>OpenAI</strong> integration for lyrics</li>
+  <li>Unified Gateway for LLMs</li>
+  <li>Streaming text responses</li>
 </ul>
 </div>
 
 <div>
 <h3>Exa Search</h3>
 <ul>
-  <li>Neural search for agents</li>
+  <li>Neural search for music context</li>
   <li>Category-aware filtering</li>
-  <li>Content extraction</li>
+  <li>Content extraction for agents</li>
 </ul>
 </div>
 
@@ -226,19 +200,19 @@ layout: image-left
 image: https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80
 ---
 
-# Tooling & Infrastructure
+# Tooling & Validation
 
-- 📱 **PWA**: Fully offline-capable via `vite-plugin-pwa`
-- 🧪 **Testing**: Playwright for E2E browser testing
-- ⚡ **Deployment**: Vercel for the frontend, Convex for the backend
-- 🏗️ **CI/CD**: Automatic checks (`astro check`, `stylelint`) before build
+- 🧪 **Testing**: Robust E2E coverage with **Playwright**.
+- 🔍 **Linting**: Strict `stylelint` and `eslint` configurations.
+- 🏗️ **CI/CD**: Automatic Vercel deployments on every push.
+- 📱 **PWA**: Installable experience via `vite-plugin-pwa`.
 
 ```bash
-# Core scripts
-npm run dev      # Dev server
-npm run convex   # Backend server
-npm run check    # Full validation
-npm run test     # E2E test suite
+# Core workflows
+npm run dev      # Local development
+npm run convex   # Backend synchronization
+npm run test     # Headless browser testing
+npm run check    # Type & Astro validation
 ```
 
 ---
@@ -248,7 +222,7 @@ class: text-center
 
 # Conclusion
 
-The platform provides a robust, type-safe, and real-time foundation for modern web applications, combining the best of server-side performance and interactive client-side experiences.
+**gem** redefines the boundary between sound and vision, providing a powerful platform for AI-assisted creativity and accessibility.
 
 <div class="mt-12 flex justify-center gap-8">
   <div class="flex flex-col items-center">
@@ -256,12 +230,12 @@ The platform provides a robust, type-safe, and real-time foundation for modern w
     <span class="text-xs">Open Source</span>
   </div>
   <div class="flex flex-col items-center">
-    <carbon:cloud class="text-4xl mb-2"/>
-    <span class="text-xs">Cloud Native</span>
+    <carbon:accessibility class="text-4xl mb-2"/>
+    <span class="text-xs">Inclusive Design</span>
   </div>
   <div class="flex flex-col items-center">
     <carbon:flash class="text-4xl mb-2"/>
-    <span class="text-xs">Ultra Fast</span>
+    <span class="text-xs">Real-time Performance</span>
   </div>
 </div>
 
